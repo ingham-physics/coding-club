@@ -4,8 +4,7 @@ These note notebooks were presented in the coding club on 1st March 2021.
 
 ## Open the notebooks in Google Colab:
 
-Link goes here
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/InghamPhysics/coding-club/blob/master/medical-images/ReadAndConvert.ipynb)
 ## Links
 
 - platipy: <https://github.com/pyplati/platipy>
