@@ -1,0 +1,15 @@
+{
+    "name": "Coding Club Development",
+    "dockerFile": "docker/Dockerfile",
+    "workspaceFolder": "/code",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/code,type=bind,consistency=cached",
+    "appPort": [
+        8050
+    ],
+    // Add the IDs of extensions you want installed when the container is created in the array below.
+    "extensions": [
+        "ms-python.python",
+        "njpwerner.autodocstring",
+        "eamodio.gitlens"
+    ]
+}
