@@ -1,11 +1,20 @@
 
+
 def fib(n):
-    if n == 0:
+    counter = 0
+    res = 0
+    n_1 = 1
+    n_2 = 0
+    if n <= 0:
         return 0
-    elif n == 1:
-        return 1
-    else:
-        return fib(n-1) + fib(n-2)
+    if n == 1:
+        return 1 
+    while counter <= n:
+        res = n_1 + n_2
+        n_2 = n_1
+        n_1 = res
+        counter += 1 
+    return res
 
 print(fib(0))
 print(fib(1))
