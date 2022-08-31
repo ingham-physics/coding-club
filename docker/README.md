@@ -146,7 +146,7 @@ heroku container:release -a ingham-docker-demo web
 
 ## More Docker
 
-This is only a tiny portion of what can be done with Docker. Explore more features like:
+This is only a tiny portion of what can be done with Docker. Explore more features like these:
 
 - [Docker Compose](https://docs.docker.com/compose/gettingstarted/)
 - [Docker Volumes](https://docs.docker.com/storage/volumes/)
