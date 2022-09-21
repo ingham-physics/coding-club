@@ -21,7 +21,7 @@ available_indicators = df["Indicator Name"].unique()
 
 app.layout = html.Div(
     [
-        html.H2("Coding Club Example"),
+        html.H2("Coding Club"),
         html.Div(
             [
                 html.Div(
@@ -42,7 +42,8 @@ app.layout = html.Div(
                             labelStyle={"display": "inline-block"},
                         ),
                     ],
-                    style={"width": "49%", "display": "inline-block"},
+                    # change to width - Iromi
+                    style={"width": "60%", "display": "inline-block"},
                 ),
                 html.Div(
                     [
