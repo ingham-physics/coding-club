@@ -25,7 +25,7 @@ available_indicators = df["Indicator Name"].unique()
 
 app.layout = html.Div(
     [
-        html.H6("Coding Club Example"),
+        html.H3("Coding Club Github"),
         html.Div(
             [
                 html.Div(
