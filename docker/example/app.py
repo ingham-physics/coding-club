@@ -20,6 +20,8 @@ df = pd.read_csv("https://plotly.github.io/datasets/country_indicators.csv")
 # Set the available indicators
 available_indicators = df["Indicator Name"].unique()
 
+# another commit
+
 app.layout = html.Div(
     [
         html.H6("Coding Club Example"),
