@@ -17,11 +17,12 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets, server=serv
 
 df = pd.read_csv("https://plotly.github.io/datasets/country_indicators.csv")
 
+# Set the available indicators
 available_indicators = df["Indicator Name"].unique()
 
 app.layout = html.Div(
     [
-        html.H2("Coding Club Example"),
+        html.H6("Coding Club Example"),
         html.Div(
             [
                 html.Div(
