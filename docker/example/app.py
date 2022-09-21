@@ -8,8 +8,7 @@ import pandas as pd
 import plotly.express as px
 import flask
 
-print("test_message")
-print("test_message2")
+
 external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 
 server = flask.Flask(__name__)
@@ -18,14 +17,11 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets, server=serv
 
 df = pd.read_csv("https://plotly.github.io/datasets/country_indicators.csv")
 
-# Set the available indicators
 available_indicators = df["Indicator Name"].unique()
-
-# another commit
 
 app.layout = html.Div(
     [
-        html.H3("Coding Club Github"),
+        html.H2("Coding Club Example"),
         html.Div(
             [
                 html.Div(
@@ -105,8 +101,7 @@ app.layout = html.Div(
     ]
 )
 
-### who are we going to call back?????
-##another comment
+
 @app.callback(
     dash.dependencies.Output("crossfilter-indicator-scatter", "figure"),
     [
@@ -198,8 +193,8 @@ def update_y_timeseries(hoverData, xaxis_column_name, axis_type):
     ],
 )
 def update_x_timeseries(hoverData, yaxis_column_name, axis_type):
-    dff = df[df["Name of the Country"] == hoverData["points"][0]["customdata"]]
-    dff = dff[dff["Name of the Indicator"] == yaxis_column_name]
+    dff = df[df["Country Name"] == hoverData["points"][0]["customdata"]]
+    dff = dff[dff["Indicator Name"] == yaxis_column_name]
     return create_time_series(dff, axis_type, yaxis_column_name)
 
 
@@ -209,5 +204,3 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         port = sys.argv[-1]
     app.run_server(debug=True, host="0.0.0.0", port=port)
-
-    #adding a branch
