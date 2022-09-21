@@ -8,7 +8,7 @@ import pandas as pd
 import plotly.express as px
 import flask
 
-
+print("test_message")
 external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 
 server = flask.Flask(__name__)
