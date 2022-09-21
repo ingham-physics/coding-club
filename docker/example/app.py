@@ -193,8 +193,8 @@ def update_y_timeseries(hoverData, xaxis_column_name, axis_type):
     ],
 )
 def update_x_timeseries(hoverData, yaxis_column_name, axis_type):
-    dff = df[df["Country Name"] == hoverData["points"][0]["customdata"]]
-    dff = dff[dff["Indicator Name"] == yaxis_column_name]
+    dff = df[df["Name of the Country"] == hoverData["points"][0]["customdata"]]
+    dff = dff[dff["Name of the Indicator"] == yaxis_column_name]
     return create_time_series(dff, axis_type, yaxis_column_name)
 
 
