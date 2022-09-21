@@ -6,3 +6,5 @@ This reposistory is to share code, scripts, notebooks, etc presented at the fort
  - Phil Chlap (<phillip.chlap@unsw.edu.au>)
 
 ### Changes done by Fahim for Git Demo
+
+### Further changes on 21 September (2nd session on Github)
