@@ -1,3 +1,4 @@
+# GitHub Features
 
 - Issues
   - Creating issues
@@ -8,7 +9,7 @@
 
 - Branching
   - branch names
-  - comitting to branch
+  - committing to branch
 
 - Forking
   - How to contribute to a repo you don't have write permission to
