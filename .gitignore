@@ -157,3 +157,5 @@ dmypy.json
 
 # Ignore the data directories
 **/data
+
+.DS_Store
