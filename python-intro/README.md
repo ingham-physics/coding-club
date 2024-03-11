@@ -10,7 +10,7 @@ Visual Studio Code is a Interactive Development Environment (IDE) that provides 
 #### Installing VSC
 - Navigate to https://code.visualstudio.com/, and download the appropriate version for your machine.
 
-### Python installation
+### Python installationnnnn
 - Python can be downloaded here: https://www.python.org/downloads/
 - For MacBooks, the tool [Homebrew](https://brew.sh/) is useful can be used to download software onto the MacOS:
     * ```brew install python```
